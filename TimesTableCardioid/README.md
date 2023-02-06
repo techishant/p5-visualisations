@@ -1,14 +1,17 @@
-# Collatz Conjecture
-The Collatz conjecture is one of the most famous unsolved problems in mathematics. The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1.
+# Times Table Cardioid
+A cardioid can also be defined as the set of points of reflections of a fixed point on a circle through all tangents to the circle.
 
 **Live at:** [techishant.github.io/p5-visualisations/TimesTableCardioid](https://techishant.github.io/p5-visualisations/TimesTableCardioid)
 
 ### Examples:
-1. 6322
-![6322](../imgs/6322.PNG)
+1. 2
+![card2](../imgs/card2.PNG)
 ---
-2. 6171
-![6171](../imgs/6171.PNG)
+2. 73
+![card73](../imgs/card73.PNG)
+---
+3. 400.89
+![card200-83](../imgs/card200-83.PNG)
 
 references: 
 
