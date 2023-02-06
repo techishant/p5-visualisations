@@ -64,7 +64,7 @@ function draw(){
     scale(1,-1);
     noFill();
     stroke(255);
-    strokeWeight(0.1)
+    strokeWeight(1)
     circle(0, 0, 2*r)
     
     beginShape();
