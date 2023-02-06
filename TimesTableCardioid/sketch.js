@@ -1,5 +1,5 @@
 let r = 220;
-let n = 400;
+let n = 1;
 var total = 300;
 
 function setup() {
