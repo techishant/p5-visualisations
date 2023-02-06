@@ -1,5 +1,7 @@
-# Times Table Cardioid
+# Collatz Conjecture
 The Collatz conjecture is one of the most famous unsolved problems in mathematics. The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1.
+
+**Live at:** [techishant.github.io/p5-visualisations/TimesTableCardioid](https://techishant.github.io/p5-visualisations/TimesTableCardioid)
 
 ### Examples:
 1. 6322
