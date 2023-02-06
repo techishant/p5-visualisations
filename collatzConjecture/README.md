@@ -3,9 +3,9 @@ The Collatz conjecture is one of the most famous unsolved problems in mathematic
 
 ### Examples:
 1. 6322
-![6322](..\imgs\6322.png)
+![6322](..\imgs\6322.PNG)
 ---
 2. 6171
-![6171](..\imgs\6171.png)
+![6171](..\imgs\6171.PNG)
 
 references: [wikipedia.org/wiki/Collatz_conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
