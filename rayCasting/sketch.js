@@ -12,9 +12,9 @@ function setup(){
     x2 = 250; y2 = -250;
 
     rayPoint = new createVector(0,0);
-    // for(i = 0; i<= TWO_PI; i+= 0.1){
-    //     rayList.push(new Ray(rayPoint.x,rayPoint.y,i));
-    // }
+    for(i = 0; i<= TWO_PI; i+= 1){
+        rayList.push(new Ray(rayPoint.x,rayPoint.y,i));
+    }
 }
 
 
@@ -25,10 +25,12 @@ function draw(){
     scale(1,-1);
     stroke(255);
     
-    x3 = 90;
-    y3 = 34;
+    x3 =0;
+    y3 =0;
     x4 = mouseX-width/2;
     y4 = -(mouseY-height/2);
+    // y4 = y3 + Math.sin(radians(a.value())) * 100;
+    // x4 = x3 + Math.cos(radians(a.value())) * 100;
     line(x1,y1,x2,y2);
     strokeWeight(5)
     point(x4, y4)

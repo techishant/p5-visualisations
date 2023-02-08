@@ -16,28 +16,19 @@ class Ray{
     }
 
     cast(x3,y3,x4,y4){
-        let d = (x3-x4) * (this.y1-this.y2) - (y3-y4) * (this.x1 - this.x2);
-        let t,u;
-        if(d != 0)
-        {
-            t = ((x3-this.x1) * (this.y1-this.y2) - (y3-this.y1)*(this.x1-this.x2)) / d;
-            u = ((x3-this.x1) * (y3-y4) - (y3-this.y1)*(x3-x4)) / d;
-            
-            
-            if(t > 0 && t < 1 && u > 0){
-                this.x2 = this.x1 + u*(this.x2 - this.x1)
-                this.y2 = this.y1 + u*(this.y2 - this.y1)
-                return;
-            }else{
-                this.x2 = this.x_;
-                this.y2 = this.y_;
-            }
-        }        
-        this.x2 = this.x_;
-        this.y2 = this.y_;
-    }
+        let d = (this.x1 - this.x2) * (y3-y4) - (this.y1 - this.y2) * (x3-x4)
+        if(d == 0) return;
 
+        let u = (this.x1 - x3) * (this.y1 - this.y2) - (this.y1 - y3) * (this.x1 - this.x2) /d;
+        let t = (this.x1 - x3) * (y3 - y4) - (this.y1 - y3) * (x3 - x4) /d;
+        
+        if(0<=u && u<=1){
+            console.log("intersection")
+        }
+    }
+    
     drawShape(){
+        
         line(this.x1,this.y1,this.x2,this.y2);
     }
 }
