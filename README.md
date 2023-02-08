@@ -8,3 +8,4 @@ These are all live at their  respective url.
 | 2     | [TimesTableCardioid](https://techishant.github.io/p5-visualisations/TimesTableCardioid)     |
 | 3     | [collatzConjecture](https://techishant.github.io/p5-visualisations/collatzConjecture)       |
 | 4     | [lineLineIntersection](https://techishant.github.io/p5-visualisations/lineLineIntersection) |
+| 4     | [rayCasting](https://techishant.github.io/p5-visualisations/rayCasting) |
