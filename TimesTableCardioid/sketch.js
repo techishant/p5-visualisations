@@ -6,6 +6,7 @@ function setup() {
   createCanvas(600, 600);
   preVal = createInput('',Number);
   stopAt = createInput('',Number);
+  totalInp = createSlider(1, 300,300)
   preVal_ = '';
 }
 function mouseClicked() {
@@ -24,6 +25,7 @@ function getVector(index, total, r) {
 }
 animate = false
 function draw() {
+  total = totalInp.value()
   if(preVal.value() != preVal_){
     if(preVal.value() == ''){
       n = 0;
