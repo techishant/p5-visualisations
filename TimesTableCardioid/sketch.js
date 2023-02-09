@@ -4,6 +4,9 @@ var total = 300;
 
 function setup() {
   createCanvas(600, 600);
+  preVal = createInput('',Number);
+  stopAt = createInput('',Number);
+  preVal_ = '';
 }
 function mouseClicked() {
   if(animate){
@@ -21,9 +24,16 @@ function getVector(index, total, r) {
 }
 animate = false
 function draw() {
-  
+  if(preVal.value() != preVal_){
+    if(preVal.value() == ''){
+      n = 0;
+    }else{
+      n = parseFloat(preVal.value());
+    }
+    preVal_ = preVal.value();
+  }
   // console.log(animate)
-  if(animate){
+  if(animate && (n < parseFloat(stopAt.value()) || stopAt.value() == '')){
     n = n+0.01;
   }
   background(0)
