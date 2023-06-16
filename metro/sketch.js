@@ -19,7 +19,7 @@ function draw(){
     strokeWeight(2);
     circle(0, 0, radius*2+30);
     noFill();
-    circle(0, 0, radius*2-90);
+    // circle(0, 0, radius*2-90);
     strokeWeight(30);
     stroke(255,0,0);    
     tmpSinValue = sin(i);    
