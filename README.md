@@ -12,3 +12,4 @@ These are all live at their  respective url.
 | 6     | [oscillator](https://techishant.github.io/p5-visualisations/oscillator) (audio based)|
 | 7     | [parabolicCurve](https://techishant.github.io/p5-visualisations/parabolicCurve) (Quadratic Curve) |
 | 8     | [metro](https://techishant.github.io/p5-visualisations/metro) |
+| 9     | [lowResCircle](https://techishant.github.io/p5-visualisations/lowResCircle) (pixelated circle) |
