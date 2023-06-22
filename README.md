@@ -13,3 +13,5 @@ These are all live at their  respective url.
 | 7     | [parabolicCurve](https://techishant.github.io/p5-visualisations/parabolicCurve) (Quadratic Curve) |
 | 8     | [metro](https://techishant.github.io/p5-visualisations/metro) |
 | 9     | [lowResCircle](https://techishant.github.io/p5-visualisations/lowResCircle) (pixelated circle) |
+| 10     | [vectorRotation](https://techishant.github.io/p5-visualisations/vectorRotation) |
+| 11     | [shapeRotation](https://techishant.github.io/p5-visualisations/shapeRotation)|

@@ -49,7 +49,8 @@ function draw(){
             else            yCor = yCor - (10-deltaY);        
         }
 
-        stroke(255);
+        stroke(0);
+        // noStroke();
         fill(255);
         // noFill();
         
