@@ -15,3 +15,4 @@ These are all live at their  respective url.
 | 9     | [lowResCircle](https://techishant.github.io/p5-visualisations/lowResCircle) (pixelated circle) |
 | 10     | [vectorRotation](https://techishant.github.io/p5-visualisations/vectorRotation) |
 | 11     | [shapeRotation](https://techishant.github.io/p5-visualisations/shapeRotation)|
+| 11     | [imageRotation](https://techishant.github.io/p5-visualisations/imageRotation)|
