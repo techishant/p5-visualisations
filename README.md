@@ -16,3 +16,4 @@ These are all live at their  respective url.
 | 10     | [vectorRotation](https://techishant.github.io/p5-visualisations/vectorRotation) |
 | 11     | [shapeRotation](https://techishant.github.io/p5-visualisations/shapeRotation)|
 | 11     | [imageRotation](https://techishant.github.io/p5-visualisations/imageRotation)|
+| 12     | [Bubble Sort Animation](https://techishant.github.io/p5-visualisations/bubbleSort)|
