@@ -3,7 +3,7 @@ function setup(){
     createCanvas(900, 600)
     osc = new p5.Oscillator('sine');
     osc.start()
-    f = createSlider(1, 22050,1);
+    f = createSlider(0, 22000,1);
     a = createSlider(1,50);
 }
 

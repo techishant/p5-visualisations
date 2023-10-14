@@ -2,7 +2,7 @@ let img;
 let angleSlider;
 let angle;
 function preload(){
-  img = loadImage("https://techishant.github.io/p5-visualisations/imageRotation/img/name.png");
+  img = loadImage("img/name.png");
   angleSlider = createSlider(0,360);
   angle = angleSlider.value();
 }

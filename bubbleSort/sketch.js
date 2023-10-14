@@ -99,6 +99,7 @@ function mouseClicked(){
 
 
 
+
 function drawArr(arr){
     s = width/arr.length;
     stroke(0);

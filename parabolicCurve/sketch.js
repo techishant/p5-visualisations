@@ -4,8 +4,8 @@ function setup(){
   Button_Redraw_Trajectory = createButton("Redraw Trajectory");
   speedSlider = createSlider(0, 100, 60, 1);
   a_slider = createSlider(-10,10, -0.01, 0.01);
-  b_slider = createSlider(-10,10, 0 , 0,01);
-  c_slider = createSlider(-10,10, 1, 0,01);
+  b_slider = createSlider(-10,10, 0 , 0,1);
+  c_slider = createSlider(-10,10, 1, 0,1);
   prediction = createCheckbox("Prediction", false);
 }
 
