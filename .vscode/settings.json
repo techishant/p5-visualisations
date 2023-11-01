@@ -1,5 +1,6 @@
 {
     "vsintellicode.typescript.completionsEnabled": false,
     "javascript.suggest.classMemberSnippets.enabled": false,
-    "javascript.suggest.completeFunctionCalls": false
+    "javascript.suggest.completeFunctionCalls": false,
+    "editor.inlineSuggest.enabled": false
 }
