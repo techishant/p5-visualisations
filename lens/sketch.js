@@ -6,27 +6,61 @@ let objectSizeSlider;
 
 
 function setup(){
-    createCanvas(window.innerWidth,800);
+    createCanvas(window.innerWidth,window.innerHeight-70);
     focusLabel = document.createElement(LABEL);
     focusLabel.innerText = "Focus: ";
     focusLabel.setAttribute("for", "focusSlider");
     document.body.appendChild(focusLabel);
-    focusSlider = createSlider(-200, 200, 10);
+    focusSlider = createSlider(-200, 200, 200, 10);
     focusSlider.elt.id = "focusSlider";
 
 
     objectSizeLabel = document.createElement(LABEL);
-    objectSizeLabel.innerText = "\nu: ";
+    objectSizeLabel.innerText = "\tu: ";
     objectSizeLabel.setAttribute("for", "objectSizeSlider");
     document.body.appendChild(objectSizeLabel);
-    objectSizeSlider = createSlider(1,100);
+    objectSizeSlider = createSlider(0,100, 100, 5);
 }
 
 function updateValues(){
     object.size = objectSizeSlider.value();
     lens.focus = focusSlider.value();
+    if(mouseY<height)
     object.pos = map(mouseX, 0, width, -width/2, width/2);
-    if(object.pos>0) object.pos = 0;
+    if(object.pos>0) object.pos = 1;
+}
+function displayInfo(){
+    scale(1,-1);
+    fill(255)
+    strokeWeight(0);
+    stroke(255);
+    textSize(30);
+    text(`f\t= ${parseInt(lens.focus/10)}`, -width/2 + 20, -height/2+30);
+    // text(`u ${parseInt(object.pos/10)}`, -width/2 + 20, 40);
+
+    if(object.pos > 9999999) 
+    text(`u\t=  ${"Infinity"}`, -width/2 + 20, -height/2+60);
+    else if(object.pos < -9999999)
+    text(`u\t=  ${"-Infinity"}`, -width/2 + 20, -height/2+60);
+    else
+    text(`u\t=  ${parseInt(object.pos/10)}`, -width/2 + 20, -height/2+60);
+
+    if(image.pos > 9999999) 
+    text(`v\t=  ${"Infinity"}`, -width/2 + 20, -height/2+90);
+    else if(image.pos < -9999999)
+    text(`v\t=  ${"-Infinity"}`, -width/2 + 20, -height/2+90);
+    else
+    text(`v\t=  ${parseInt(image.pos/10)}`, -width/2 + 20, -height/2+90);
+
+    if(image.size > 9999999) 
+    text(`I\t=  ${"Infinity"}`, -width/2 + 20, -height/2+120);
+    else if(image.size <-9999999)
+    text(`I\t=  ${"-Infinity"}`, -width/2 + 20, -height/2+120);
+    else
+    text(`I\t=  ${parseInt(image.size/10)}`, -width/2 + 20, -height/2+120);
+
+    text(`O\t=  ${parseInt(object.size/10)}`, -width/2 + 20, -height/2+150);
+    scale(1,-1);
 }
 
 function draw(){
@@ -56,10 +90,10 @@ function draw(){
     scale(1,-1);
     textSize(20);
     fill(255);
-    text("F1", lens.focus, 40)
-    text("2F1", 2*lens.focus, 40)
-    text("F2", -lens.focus, 40)
-    text("2F2", 2*-lens.focus, 40)
+    text("F2", lens.focus, 40)
+    text("2F2", 2*lens.focus, 40)
+    text("F1", -lens.focus, 40)
+    text("2F1", 2*-lens.focus, 40)
     scale(1,-1);
     
     //drawing lens
@@ -91,8 +125,8 @@ function draw(){
     stroke(150)
     line(object.pos, object.size, image.pos , image.size); 
 
-
-   
+    displayInfo()
+    
 }
 
 function getV(){
