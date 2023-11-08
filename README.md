@@ -20,7 +20,7 @@ These are all live at their  respective url.
 | 14     | [lens](https://techishant.github.io/p5-visualisations/lens)|
 | 15     | [Cardioid](https://techishant.github.io/p5-visualisations/cardioid) (circle rotating on a circle)|
 | 16     | [Follow Mouse](https://techishant.github.io/p5-visualisations/followMouse) |
-| 17     | [Gaussian-blur](https://techishant.github.io/p5-visualisations/gaussian-blur) |
+| 17     | [Gaussian-blur](https://techishant.github.io/p5-visualisations/gaussianBlur) |
 | 18     | [monkeyMan](https://techishant.github.io/p5-visualisations/monkeyMan) (some Random fabric Stuff) |
 | 19     | [tree](https://techishant.github.io/p5-visualisations/tree) |
 | 20     | [tusiCouple](https://techishant.github.io/p5-visualisations/tusiCouple) |

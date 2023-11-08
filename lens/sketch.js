@@ -1,9 +1,32 @@
 let lens = {"pos": 0, "focus": 50};
 let object = {"pos": -20, "size": 14};
 let image = {"pos": -20, "size": 14};
+let focusSlider;
+let objectSizeSlider;
+
 
 function setup(){
-    createCanvas(400,400);
+    createCanvas(window.innerWidth,800);
+    focusLabel = document.createElement(LABEL);
+    focusLabel.innerText = "Focus: ";
+    focusLabel.setAttribute("for", "focusSlider");
+    document.body.appendChild(focusLabel);
+    focusSlider = createSlider(-200, 200, 10);
+    focusSlider.elt.id = "focusSlider";
+
+
+    objectSizeLabel = document.createElement(LABEL);
+    objectSizeLabel.innerText = "\nu: ";
+    objectSizeLabel.setAttribute("for", "objectSizeSlider");
+    document.body.appendChild(objectSizeLabel);
+    objectSizeSlider = createSlider(1,100);
+}
+
+function updateValues(){
+    object.size = objectSizeSlider.value();
+    lens.focus = focusSlider.value();
+    object.pos = map(mouseX, 0, width, -width/2, width/2);
+    if(object.pos>0) object.pos = 0;
 }
 
 function draw(){
@@ -13,28 +36,48 @@ function draw(){
     stroke(255);
     strokeWeight(1);
     line(-width/2, 0, width/2, 0);
-    object.pos = map(mouseX, 0, width, -width/2, width/2);
-    if(Math.abs(-width/2 - object.pos) < 10) object.pos = -width/2;
+
+    updateValues();
+
+    if(Math.abs(-width/2 - object.pos) < 10) object.pos = -99999999;
     image.pos = getV();
     image.size = getI();
 
     
+    // drawing markings
+    stroke(255,0,0)
+    strokeWeight(20)
+    point(lens.focus, 0);
+    point(lens.focus*2, 0)
+    point(-lens.focus, 0 )
+    point(-lens.focus*2, 0)
+    stroke(255)
+    strokeWeight(1)
+    scale(1,-1);
+    textSize(20);
+    fill(255);
+    text("F1", lens.focus, 40)
+    text("2F1", 2*lens.focus, 40)
+    text("F2", -lens.focus, 40)
+    text("2F2", 2*-lens.focus, 40)
+    scale(1,-1);
     
     //drawing lens
-    strokeWeight(1);
-    line(lens.pos, 50, lens.pos, -50);
+    strokeWeight(3);
+    line(lens.pos, 100, lens.pos, -100);
 
     // drawing object
-    strokeWeight(1);
+    strokeWeight(4);
     line(object.pos, 0,object.pos, object.size)
 
     // drawing image
     stroke(0, 255,0)
-    strokeWeight(1);
+    strokeWeight(4);
     line(image.pos, 0,image.pos, image.size)
 
     // drawing guide
     stroke(150)
+    strokeWeight(1);
     // object to lens
     line(object.pos, object.size, 0 , object.size)
     // lens to object + passing through focus
@@ -49,18 +92,13 @@ function draw(){
     line(object.pos, object.size, image.pos , image.size); 
 
 
-    stroke(255,0,0)
-    strokeWeight(3)
-    point(lens.focus, 0)
-    point(lens.focus*2, 0)
-    point(-lens.focus, 0 )
-    point(-lens.focus*2, 0)
+   
 }
 
 function getV(){
     let v = (lens.focus*object.pos)/(object.pos + lens.focus);
     if(v==-Infinity) v = 999999999999999;
-    console.log(object.pos + "     " +  v)
+    // console.log(object.pos + "     " +  v)
     return v;
 }
 
