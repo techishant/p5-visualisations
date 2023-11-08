@@ -15,5 +15,12 @@ These are all live at their  respective url.
 | 9     | [lowResCircle](https://techishant.github.io/p5-visualisations/lowResCircle) (pixelated circle) |
 | 10     | [vectorRotation](https://techishant.github.io/p5-visualisations/vectorRotation) |
 | 11     | [shapeRotation](https://techishant.github.io/p5-visualisations/shapeRotation)|
-| 11     | [imageRotation](https://techishant.github.io/p5-visualisations/imageRotation)|
-| 12     | [Bubble Sort Animation](https://techishant.github.io/p5-visualisations/bubbleSort)|
+| 12     | [imageRotation](https://techishant.github.io/p5-visualisations/imageRotation)|
+| 13     | [Bubble Sort Animation](https://techishant.github.io/p5-visualisations/bubbleSort)|
+| 14     | [lens](https://techishant.github.io/p5-visualisations/lens)|
+| 15     | [Cardioid](https://techishant.github.io/p5-visualisations/cardioid) (circle rotating on a circle)|
+| 16     | [Follow Mouse](https://techishant.github.io/p5-visualisations/followMouse) |
+| 17     | [Gaussian-blur](https://techishant.github.io/p5-visualisations/gaussian-blur) |
+| 18     | [monkeyMan](https://techishant.github.io/p5-visualisations/monkeyMan) (some Random fabric Stuff) |
+| 19     | [tree](https://techishant.github.io/p5-visualisations/tree) |
+| 20     | [tusiCouple](https://techishant.github.io/p5-visualisations/tusiCouple) |
