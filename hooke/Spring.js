@@ -5,7 +5,7 @@ class Spring {
     this.b = b;
     this.k = 0.01;
     this.g = createVector(0,0.2);
-    this.dampBy = 0.02;
+    this.dampBy = 0.01;
   }
 
   update() {

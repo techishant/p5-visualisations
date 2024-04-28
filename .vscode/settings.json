@@ -2,5 +2,12 @@
     "vsintellicode.typescript.completionsEnabled": false,
     "javascript.suggest.classMemberSnippets.enabled": false,
     "javascript.suggest.completeFunctionCalls": false,
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "editor.snippetSuggestions": "inline",
+    "editor.suggest.preview": false,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showVariables": true
 }
