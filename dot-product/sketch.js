@@ -36,8 +36,8 @@ function draw(){
 
     updateVector(A, "A");
 
-    theta = p5.Vector.angleBetween(A, B);
-    alpha = p5.Vector.angleBetween(C, B);
+    theta =A.angleBetween(B);
+    alpha = C.angleBetween(B);
     dp = A.mag() * B.mag() * cos(theta);
     cp = A.mag() * B.mag() * sin(theta);
 
